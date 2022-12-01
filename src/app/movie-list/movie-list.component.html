@@ -20,17 +20,9 @@
             <td>{{movie.duration | duration}}</td>
             <td>{{movie.director}}</td>
             <td>{{movie.year}}<span class="badge text-bg-success" *ngIf="movie.premiere">estreno</span></td>
-            <td>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" role="switch" type="checkbox" [(ngModel)]="movie.seen">
-                </div>
-            </td>
-            <td>
-                <textarea class="disable">{{movie.review}}</textarea>
-            </td>
-            <td>
-                <button class="btn btn-outline-warning"><i class="fa-solid fa-plus"></i></button>
-            </td>
+            <td><app-button-switch [movie]="movie"></app-button-switch></td>
+            <td><textarea class="disable">{{movie.review}}</textarea></td>
+            <td><button class="btn btn-outline-warning"><i class="fa-solid fa-plus"></i></button></td>
         </tr>
     </tbody>
 </table>

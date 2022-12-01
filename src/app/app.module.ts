@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { DirectorListComponent } from './director-list/director-list.component';
 import { FavoritesListComponent } from './favorites-list/favorites-list.component';
 import { MoviesComponent } from './movies/movies.component';
+import { ButtonSwitchComponent } from './button-switch/button-switch.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MoviesComponent } from './movies/movies.component';
     DurationPipe,
     DirectorListComponent,
     FavoritesListComponent,
-    MoviesComponent
+    MoviesComponent,
+    ButtonSwitchComponent
   ],
   imports: [
     BrowserModule,
