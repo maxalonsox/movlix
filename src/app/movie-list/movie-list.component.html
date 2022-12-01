@@ -7,18 +7,22 @@
             <th>Duración</th>
             <th>Director</th>
             <th>Año</th>
-            <th>Acción</th>
+            <th>Estrellas</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let movie of movies" [ngClass]="{'premiere': movie.premiere}">
-            <td><img class="img-thumbnail" [src]="movie.image" [alt]="movie.name"></td>
+            <td><img width="170" class="img-thumbnail" [src]="movie.image" [alt]="movie.name"></td>
             <td>{{movie.name}}</td>
             <td>{{movie.genre}}</td>
             <td>{{movie.duration | duration}}</td>
             <td>{{movie.director}}</td>
             <td>{{movie.year}}<span class="badge text-bg-success" *ngIf="movie.premiere">estreno</span></td>
-            <td><button></button></td>
+            <td class="puntaje">
+                <button class="btn btn-dark btn-sm" (click)="downStars(movie)">-</button>
+                <span>{{movie.stars}}</span>
+                <button class="btn btn-dark btn-sm" (click)="upStars(movie)">+</button>
+            </td>
         </tr>
     </tbody>
 </table>

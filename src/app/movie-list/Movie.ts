@@ -6,4 +6,5 @@ export interface Movie {
     year: number;
     image: string;
     premiere: boolean;
+    stars: number;
 }

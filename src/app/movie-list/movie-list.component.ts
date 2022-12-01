@@ -17,6 +17,7 @@ export class MovieListComponent {
       year : 2014,
       image : "https://i.ibb.co/yFRdfFm/interestellar.jpg",
       premiere : false,
+      stars: 0,
     },
     {
       name : "About Time",
@@ -26,6 +27,7 @@ export class MovieListComponent {
       year : 2013,
       image : "https://i.ibb.co/Sm0wCfT/about-time.jpg",
       premiere : false,
+      stars: 0,
     },
     {
       name : "Titanic",
@@ -35,6 +37,7 @@ export class MovieListComponent {
       year : 1997,
       image : "https://i.ibb.co/WKNDh43/titanic.jpg",
       premiere : false,
+      stars: 0,
     },
     {
       name : "Avatar: El sentido del agua",
@@ -44,6 +47,7 @@ export class MovieListComponent {
       year : 2022,
       image : "https://i.ibb.co/jRP3VyF/avatar-2.jpg",
       premiere : true,
+      stars: 0,
     },
     {
       name : "El Rey León",
@@ -53,8 +57,18 @@ export class MovieListComponent {
       year : 1994,
       image : "https://i.ibb.co/WncZM8p/the-lion-king.jpg",
       premiere : false,
+      stars: 0,
     }
   ];
 
   constructor() { }
+
+  upStars(movie: Movie): void {
+    if (movie.stars < 5) movie.stars++;
+  }
+
+  downStars(movie: Movie): void {
+    if (movie.stars > 0) movie.stars--;
+  }
+
 }
