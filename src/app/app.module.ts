@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { DurationPipe } from './duration.pipe';
 import { FormsModule } from '@angular/forms';
+import { DirectorListComponent } from './director-list/director-list.component';
+import { FavoritesListComponent } from './favorites-list/favorites-list.component';
+import { MoviesComponent } from './movies/movies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieListComponent,
-    DurationPipe
+    DurationPipe,
+    DirectorListComponent,
+    FavoritesListComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
