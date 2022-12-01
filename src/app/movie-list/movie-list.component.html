@@ -20,7 +20,7 @@
             <td>{{movie.duration | duration}}</td>
             <td>{{movie.director}}</td>
             <td>{{movie.year}}<span class="badge text-bg-success" *ngIf="movie.premiere">estreno</span></td>
-            <td><app-button-switch [movie]="movie"></app-button-switch></td>
+            <td><app-button-switch [(seen)]="movie.seen"></app-button-switch></td>
             <td><textarea class="disable">{{movie.review}}</textarea></td>
             <td><button class="btn btn-outline-warning"><i class="fa-solid fa-plus"></i></button></td>
         </tr>

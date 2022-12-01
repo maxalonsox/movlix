@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { Movie } from '../movie-list/Movie';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button-switch',
@@ -11,5 +10,14 @@ export class ButtonSwitchComponent {
   constructor() {}
   
   @Input()
-  movie!: Movie;
+  seen!: boolean;
+
+  @Output()
+  seenChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+  changeSeen(): void {
+    if (this.seen) this.seen = false;
+    else this.seen = true;
+    this.seenChange.emit(this.seen);
+  }
 }
