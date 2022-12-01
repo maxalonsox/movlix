@@ -15,7 +15,7 @@ export class MovieListComponent {
       duration : 169,
       director : "Christopher Nolan",
       year : 2014,
-      image : "assets/img/interestellar.jpg",
+      image : "https://i.ibb.co/yFRdfFm/interestellar.jpg",
       premiere : false,
     },
     {
@@ -24,7 +24,7 @@ export class MovieListComponent {
       duration : 123,
       director : "Richard Curtis",
       year : 2013,
-      image : "assets/img/about-time.jpg",
+      image : "https://i.ibb.co/Sm0wCfT/about-time.jpg",
       premiere : false,
     },
     {
@@ -33,7 +33,7 @@ export class MovieListComponent {
       duration : 194,
       director : "James Cameron",
       year : 1997,
-      image : "assets/img/titanic.jpg",
+      image : "https://i.ibb.co/WKNDh43/titanic.jpg",
       premiere : false,
     },
     {
@@ -42,7 +42,7 @@ export class MovieListComponent {
       duration : 192,
       director : "James Cameron",
       year : 2022,
-      image : "assets/img/avatar-2.jpg",
+      image : "https://i.ibb.co/jRP3VyF/avatar-2.jpg",
       premiere : true,
     },
     {
@@ -51,7 +51,7 @@ export class MovieListComponent {
       duration : 87,
       director : "Rob Minkoff y Roger Allers",
       year : 1994,
-      image : "assets/img/the-lion-king.jpg",
+      image : "https://i.ibb.co/WncZM8p/the-lion-king.jpg",
       premiere : false,
     }
   ];
