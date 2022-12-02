@@ -10,6 +10,7 @@ import { DirectorListComponent } from './director-list/director-list.component';
 import { FavoritesListComponent } from './favorites-list/favorites-list.component';
 import { MoviesComponent } from './movies/movies.component';
 import { ButtonSwitchComponent } from './button-switch/button-switch.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ButtonSwitchComponent } from './button-switch/button-switch.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
