@@ -1,1 +1,20 @@
 <p>Lista de favoritos</p>
+
+<table class="table table-striped table-hover text-center">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Vista</th>
+            <th>Reseña</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movie of myFavList$ | async">
+            <td>{{movie.name}}</td>
+            <td><app-button-switch [(seen)]="movie.seen"></app-button-switch></td>
+            <td>{{movie.review}}</td>
+            <td><button class="btn btn-danger" (click)="deleteFromFavList(movie)"><i class="fa-solid fa-trash"></i></button></td>
+        </tr>
+    </tbody>
+</table>

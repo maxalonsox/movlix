@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FavListService } from '../fav-list.service';
 import { Movie } from './Movie';
 
 @Component({
@@ -66,6 +67,11 @@ export class MovieListComponent {
     }
   ];
 
-  constructor() { }
+  constructor(private favlist: FavListService) { }
+
+  addToFavList(movie: Movie): void {
+    this.favlist.addToFavList(movie);
+  }
+
 
 }
